@@ -20,11 +20,11 @@ body {
   flex-direction: column;
 }
 
-h1 {
+.title {
   text-align: center;
 }
 
-main {
+.square {
   height: 300px;
   width: 500px;
   border: 1px solid rgba(0, 0, 0, 0.219);
@@ -33,6 +33,24 @@ main {
   place-content: center;
   margin-top: 1em;
   box-shadow: 0 0 15px 5px rgba(146, 146, 146, 0.486);
+}
+
+.square p {
+  text-align: center;
+}
+
+.square p + p {
+  margin-top: 0.7em;
+}
+
+.addColor {
+  display: flex;
+  flex-direction: column;
+}
+
+.addColor label {
+  position: absolute;
+  left: -99999px;
 }
 
 input[type="text"] {
@@ -44,4 +62,22 @@ input[type="text"] {
   font-size: inherit;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.219);
+  box-shadow: 0 0 15px 5px rgba(146, 146, 146, 0.486);
+}
+
+button {
+  width: 30%;
+  margin: 1em auto;
+  padding: 0.25em;
+  height: 48px;
+  font-size: inherit;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  box-shadow: 0 0 15px 5px rgba(146, 146, 146, 0.486);
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(235, 235, 235);
+  color: darkgray;
 }
